@@ -1,6 +1,9 @@
 ﻿body {
   background-color: red; }
 
+.navbar {
+  background-color: #26282c !important; }
+
 /*
     #4ABDAC 
     #FC4A1A
