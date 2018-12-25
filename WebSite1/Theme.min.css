@@ -1,1 +1,1 @@
-﻿body{background-color:#f00;}.navbar{background-color:#26282c !important;}
+﻿body{background-color:#f00;}body .navbar{display:none;}body section{height:1200px;}bg-dark{background-color:#26282c !important;height:75px;}#home{background:url(montreal.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;}

@@ -1,11 +1,26 @@
 ﻿body {
     background-color:red;
+
+    .navbar{
+        display:none;
+    }
+
+    section{
+        height:1200px;
+    }
 }
 
-.navbar &.bg-dark {
+bg-dark {
     background-color: #26282c !important;
+    height:75px;
 }
 
+#home{
+    background: url(montreal.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 /*
     #4ABDAC 
     #FC4A1A
