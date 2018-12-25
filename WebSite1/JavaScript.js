@@ -1,7 +1,8 @@
 ﻿$(window).load(function () {
     $(".navbar").delay(2000).fadeIn("slow");
-	$(".loader").delay(2000).fadeOut("slow");
+    $(".loader").delay(2000).fadeOut("slow");
     $("#overlayer").delay(2000).fadeOut("slow");
+    
 })
 
 $(document).ready(function () {
