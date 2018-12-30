@@ -15,7 +15,7 @@ $(document).ready(function () {
             $target = $(target);
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 80
+            'scrollTop': $target.offset().top - 60
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
@@ -32,18 +32,21 @@ $(window).scroll(function (event) {
         $('#about .container').delay(100).fadeIn('slow');
     }
 
-
-    // if the top of our browser is inside the section2
-    //if (scroll + initialTopOffset >= $('#about').offset().top && scroll + initialTopOffset <= $('#about').offset().top + $('#about').outerHeight()) {
-    //    console.log("in section 2");
-    //    console.log(scroll);
-    //    $('#about .container').delay(500).fadeIn('slow');
-    //}
-    //if (scroll + initialTopOffset >= $('#experience').offset().top && scroll + initialTopOffset <= $('#experience').offset().top + $('#experience').outerHeight()) {
-    //    console.log("in section 3");
-    //    console.log(scroll);
-    //}
+    if (scroll >= 2563) {
+        $('#skills').height('auto');
+        $('#skills .container').delay(100).fadeIn('slow');
+        skillsBar();
+    }
 });
-
 //trigger the scroll
 $(window).scroll(); //ensure if you're in current position when page is refreshed
+
+
+//Skills Bar
+function skillsBar () {
+    jQuery('.skillbar').each(function () {
+        jQuery(this).find('.skillbar-bar').animate({
+            width: jQuery(this).attr('data-percent')
+        }, 6000);
+    });
+};
