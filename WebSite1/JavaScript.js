@@ -22,20 +22,31 @@ $(document).ready(function () {
     });
 });
 
+let about = false;
+let experience = false;
+let skills = false;
 //data fade in on page
 var initialTopOffset = $('#home').offset().top;
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     console.log(scroll);
-    if (scroll >= 400) {
+    if (scroll >= 400 && about == false) {
         $('#about').height('auto');
-        $('#about .container').delay(100).fadeIn('slow');
+        $('#about .container').css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 });
+        about = true;
     }
 
-    if (scroll >= 2563) {
+    if (scroll >= 1200 && experience == false) {
+        $('#experience .container').css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 });
+        $('#experience').height('auto').fadeIn('fast');
+        experience = true;
+    }
+
+    if (scroll >= 3500 && skills == false) {
+        $('#skills .container').css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 });
         $('#skills').height('auto');
-        $('#skills .container').delay(100).fadeIn('slow');
         skillsBar();
+        skills = true;
     }
 });
 //trigger the scroll

@@ -2,7 +2,8 @@
   background-color: #181818 !important;
   height: 100%;
   margin: 0;
-  font-family: 'EB Garamond', serif; }
+  font-family: 'EB Garamond', serif;
+  /*PAGE RELATED CSS*/ }
   body a {
     font-size: 16px; }
     @media screen and (min-width: 600px) {
@@ -54,6 +55,17 @@
   body .title-text h2 {
     color: #4a4a4a;
     margin-bottom: 0px; }
+  body .container {
+    visibility: hidden;
+    margin: 0 auto;
+    padding-top: 0px;
+    position: relative;
+    width: 336px;
+    padding-top: 50px;
+    padding-bottom: 20px; }
+    @media screen and (min-width: 600px) {
+      body .container {
+        width: 1056px; } }
   body #home img {
     border-radius: 50px;
     width: 200px; }
@@ -73,14 +85,17 @@
     padding: 20px;
     text-align: center; }
     body #home .home-text h1 {
+      font-family: 'BentonSans';
       font-size: 34px;
       font-weight: 600;
       color: white;
       letter-spacing: 0px; }
       @media screen and (min-width: 600px) {
         body #home .home-text h1 {
-          font-size: 50px;
-          letter-spacing: 8px; } }
+          font-size: 55px;
+          letter-spacing: 2.60px; } }
+    body #home .home-text p {
+      letter-spacing: 0.25px; }
   body #home bg-dark {
     background-color: #26282c !important;
     height: 75px; }
@@ -96,38 +111,37 @@
 
 #about {
   height: 800px; }
-  #about .container {
-    display: none;
-    margin: 0 auto;
-    padding-top: 0px;
-    position: relative;
-    width: 336px;
-    padding-top: 50px;
-    padding-bottom: 20px; }
-    @media screen and (min-width: 600px) {
-      #about .container {
-        width: 1056px; } }
+
+#experience {
+  height: 800px; }
+  #experience .container .experience-company {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #4a4a4a; }
+  #experience .container .experience-position {
+    margin-top: 0px;
+    font-weight: bold;
+    color: #4a4a4a; }
+  #experience .container .text {
+    margin-bottom: 25px; }
+    #experience .container .text p:nth-child(4) {
+      margin-bottom: 0px; }
 
 #skills {
   height: 500px; }
-  #skills .container {
-    display: none;
-    margin: 0 auto;
-    padding-top: 0px;
-    position: relative;
-    width: 336px;
-    padding-top: 50px;
-    padding-bottom: 20px; }
-    @media screen and (min-width: 600px) {
-      #skills .container {
-        width: 1056px; } }
-    @media screen and (max-width: 600px) {
-      #skills .container .skillbar-title {
-        width: auto; }
-        #skills .container .skillbar-title span {
-          padding: 0px;
-          padding-left: 10px;
-          margin-right: 10px; } }
+  @media screen and (max-width: 600px) {
+    #skills .container .skillbar-title {
+      width: auto; }
+      #skills .container .skillbar-title span {
+        padding: 0px;
+        padding-left: 10px;
+        margin-right: 10px; } }
+  @media screen and (min-width: 770px) {
+    #skills .container .text-container {
+      display: flex; }
+      #skills .container .text-container div:nth-child(1) {
+        margin-right: 25px; } }
   #skills .skillbar {
     position: relative;
     display: block;
