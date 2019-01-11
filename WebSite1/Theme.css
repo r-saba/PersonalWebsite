@@ -1,4 +1,21 @@
-﻿body {
+﻿body, html {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: #dcdcdc;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+h1 {
+  color: #4a4a4a;
+  text-align: center; }
+
+img {
+  margin: 0 auto;
+  display: block; }
+
+body {
   background-color: #181818 !important;
   height: 100%;
   margin: 0;
@@ -101,7 +118,7 @@
     height: 75px; }
   body #home #bg-home {
     height: 100%;
-    background: url(montreal.jpg);
+    background: url(montreal-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,7 +164,7 @@
     display: block;
     margin-bottom: 15px;
     width: 100%;
-    background: #eee;
+    background: #dcdcdc;
     height: 35px;
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -203,3 +220,12 @@
     line-height: 35px;
     color: #ffffff;
     color: rgba(0, 0, 0, 0.4); }
+
+#contact .Contact-columns {
+  justify-content: space-between;
+  font-size: x-large; }
+  @media screen and (min-width: 1000px) {
+    #contact .Contact-columns {
+      display: flex; } }
+  #contact .Contact-columns a {
+    font-size: 22px; }

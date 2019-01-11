@@ -42,7 +42,7 @@ $(window).scroll(function (event) {
         experience = true;
     }
 
-    if (scroll >= 3500 && skills == false) {
+    if (scroll >= 2583 && skills == false) {
         $('#skills .container').css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 });
         $('#skills').height('auto');
         skillsBar();
